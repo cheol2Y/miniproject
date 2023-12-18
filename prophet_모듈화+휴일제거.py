@@ -6,12 +6,12 @@
 # In[1]:
 
 
-
+!pip install prophet
 
 # In[2]:
 
 
-
+!pip install pystan
 
 # In[3]:
 
@@ -54,7 +54,7 @@ device
 # In[6]:
 
 
-
+!pip install -U finance-datareader
 
 # In[7]:
 
