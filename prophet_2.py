@@ -149,7 +149,7 @@ df[['ds', 'y']].iloc[:-10]
 
 
 # prophet 모듈 세팅
-from prophet import Prophet
+from git.miniproject.prophet_2 import Prophet
 
 # Day 단위로 데이터가 구성되어 있으므로, 일 단위 주기성 활성화
 model = Prophet(daily_seasonality=True)
