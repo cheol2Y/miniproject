@@ -28,7 +28,7 @@ import pandas_datareader.data as web
 import matplotlib.pyplot as plt
 
 from sklearn.preprocessing import MinMaxScaler
-from prophet import Prophet
+from git.miniproject.prophet_2 import Prophet
 import numpy as np
 import pandas as pd
 
