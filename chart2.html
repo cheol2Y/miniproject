@@ -1,0 +1,64 @@
+<div class="row">
+  <canvas id="myChart2" width="180" height="100"></canvas>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+  <script>
+    const stockData = [
+      { x: "2023-12-13", y: 2510.66 },
+      { x: "2023-12-14", y: 2544.18 },
+      { x: "2023-12-15", y: 2563.56 },
+      { x: "2023-12-18", y: 2566.86 },
+      { x: "2023-12-19", y: 2568.55 },
+      { x: "2023-12-20", y: 2593.97 },
+    ];
+
+    const ctx = document.getElementById("myChart2").getContext("2d");
+    const myChart2 = new Chart(ctx, {
+      type: "line",
+      data: {
+        // labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+        datasets: [
+          {
+            label: "주식 가격",
+            data: stockData,
+            backgroundColor: "rgba(255, 99, 132, 0.2)",
+            borderColor: "rgba(255, 99, 132, 1)",
+            borderWidth: 2,
+            pointRadius: 3,
+            pointBackgroundColor: "rgba(255, 99, 132, 1)",
+            fill: true,
+          },
+        ],
+      },
+      options: {
+        scales: {
+          // x: {
+          //   type: "time",
+          //   time: {
+          //     unit: "day",
+          //     tooltipFormat: "YYYY-MM-DD",
+          //   },
+          // },
+          y: {
+            beginAtZero: false,
+          },
+        },
+        plugins: {
+          tooltip: {
+            callbacks: {
+              label: (context) =>
+                new Intl.NumberFormat("en-US", {
+                  style: "currency",
+                  currency: "KRW",
+                }).format(context.parsed.y),
+            },
+          },
+        },
+        elements: {
+          line: {
+            tension: 0.2,
+          },
+        },
+      },
+    });
+  </script>
+</div>
