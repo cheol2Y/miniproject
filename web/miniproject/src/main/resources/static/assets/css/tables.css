@@ -1,0 +1,150 @@
+/* 공통 스타일 */
+/* body {
+  font-family: "Arial", sans-serif;
+} */
+.main {
+  font-family: "Nanum Gothic", sans-serif;
+  /* 추가적인 스타일 속성을 필요에 따라 여기에 추가할 수 있습니다. */
+}
+
+/* .container-fluid {
+  padding: 20px;
+} */
+
+/* 패널 스타일 */
+.panel {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.panel-heading {
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.panel-title {
+  margin: 0;
+  font-size: 20px;
+}
+
+.panel-body {
+  padding: 20px;
+}
+
+/* 검색 스타일 */
+.search {
+  margin-bottom: 20px;
+}
+
+#stockNameSelect {
+  padding: 8px;
+  font-size: 16px;
+}
+
+#searchButtonSelect {
+  padding: 8px 15px;
+  font-size: 16px;
+  background-color: #337ab7;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* 테이블 스타일 */
+.table {
+  width: 100%;
+  margin-bottom: 0;
+  color: #333;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+  border-top: 1px solid #ddd;
+  overflow: hidden;
+}
+
+.table thead th {
+  background-color: #337ab7;
+  color: #fff;
+  border-bottom: 2px solid #ddd;
+}
+
+.table tbody + tbody {
+  border-top: 2px solid #ddd;
+}
+
+/* 페이징 스타일 */
+#pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.page-button {
+  padding: 8px 12px;
+  margin: 0 5px;
+  font-size: 16px;
+  background-color: #337ab7;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.page-button:hover {
+  background-color: #23527c;
+}
+
+/* 다음 범위 버튼 스타일 */
+#pagination button:nth-last-child(1) {
+  padding: 8px 12px;
+  margin: 0 5px;
+  font-size: 16px;
+  background-color: #337ab7;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#pagination button:nth-last-child(1):hover {
+  background-color: #23527c;
+}
+/* 이전 범위 버튼 스타일 */
+#pagination button:nth-of-type(1) {
+  padding: 8px 12px;
+  margin: 0 5px;
+  font-size: 16px;
+  background-color: #337ab7;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.table tr {
+  transition: background-color 0.4s ease;
+}
+
+.table tr:hover {
+  background-color: #87cefa;
+  color: #403e10;
+  font-weight: bold;
+  /* box-shadow: #87cefa -1px 1px, #87cefa -2px 2px, #87cefa -3px 3px,
+    #87cefa -4px 4px, #87cefa -5px 5px, #87cefa -6px 6px;
+  transform: translate3d(0, 0, 0); */
+}
+#pagination button:nth-of-type(1):hover {
+  background-color: #23527c;
+}
+
+/*  */
