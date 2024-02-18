@@ -14,7 +14,7 @@
 이 프로젝트는 Prophet을 사용하여 주식 예측 모델을 구축하고, 그 결과를 Django를 이용하여 웹 인터페이스에 구현한 것입니다.
 
 ## 주요 기능
-
+- Google Finance에서 주식 Data 수집
 - Prophet을 활용한 주식 예측 모델
 - Django를 통한 웹 인터페이스 구현
 - Bootstrap을 활용한 멋진 디자인
