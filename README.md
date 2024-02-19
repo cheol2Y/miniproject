@@ -5,7 +5,7 @@
 ## 사용 기술 스택
 
 - FastAPI
-- Django
+- Spring Boot
 - Prophet
 - Bootstrap
 
@@ -16,7 +16,7 @@
 ## 주요 기능
 - Google Finance에서 주식 Data 수집
 - Prophet을 활용한 주식 예측 모델
-- Django를 통한 웹 인터페이스 구현
+- Spring Boot를 통한 웹 인터페이스 구현
 - Bootstrap을 활용한 멋진 디자인
 
 ## 시작하기
